@@ -1,36 +1,36 @@
-# **🍷 CLASIFICADOR DE CALIDAD DE VINO**
-Este proyecto permite predecir la calidad de vino al basarse en sus propiedades químicas. Para dicha predicción se utilizan modelos de clasificación como Regresión Logística y Suport Vector Machine (SVM).
-El flujo del proyecto va desde un análisis exploratorio (EDA), entrenamiento de modelo y predicción de los resultados.
+# **🍷 WINE QUALITY CLASSIFIER**
+This project allows to predict wine quality based on its chemical properties. Classification models such as Logistic Regression and Support Vector Machine (SVM) are used for this prediction.
+The project flow goes from an exploratory data analysis (EDA), model training, and prediction of the results.
 
-## 1. **Estructura del Proyecto:**
-* `data/`: Contiene el dataset original `WineQT.csv`.
-* `models/`: Contiene el modelo entrenado (`modelo.joblib`) y el escalador de datos (`scaler.joblib`).
-* `src/`: Carpeta con el código fuente en módulos:
-    * `eda.py`: Limpieza de datos y visualizaciones.
-    * `entrenamiento.py`: Procesamiento de datos entrenamiento de modelos y selección del mejor.
-    * `prueba.py`: Carga del modelo guardado, métricas finales y matriz de confusión.
+## 1. **Project Structure:**
+* `data/`: Contains the original dataset `WineQT.csv`.
+* `models/`: Contains the trained model (`model.joblib`) and the data scaler (`scaler.joblib`).
+* `src/`: Folder with the source code in modules:
+    * `eda.py`: Data cleaning and visualizations.
+    * `entrenamiento.py`: Data processing, model training, and selection of the best model.
+    * `prueba.py`: Loading the saved model, final metrics, and confusion matrix.
 
-## 2. **Requisitos de Instalación:**
-Para poder ejecutar este proyecto, se necesita tener instalado Python y pip install.
+## 2. **Installation Requirements:**
+To run this project, you need to have Python and pip installed.
 
-## 3. **Ejecución del Proyecto:**
-Primero, se debe clonar el repositorio. Una vez la dirección del directorio sea '/WINE_REPO_SC', continuar:
+## 3. **Running the Project:**
+First, you must clone the repository. Once the directory path is '/WINE_REPO_SC', continue:
 
-- Se deben instalar las librerias necesarias con el siguiente comando:
+- Install the necessary libraries with the following command:
 ```pip install -r requirements.txt```
 
-- Posteriormente se puede seguir con el flujo del proyecto:
+- You can then continue with the project flow:
 
-### Análisis de datos:
+### Data Analysis:
 ```python src/eda.py```
 
-### Entrenamiento y Selección de Modelo:
+### Model Training and Selection:
 ```python src/entrenamiento.py```
 
-### Evaluación final:
+### Final Test:
 ```python src/prueba.py```
 
-## 4. **Resultados esperados:**
-El modelo que fue seleccionado como ganador fue el de Support Vector Machine (SVM) debido a su gran capacidad para manejar relaciones no lineales en los datos químicos, obteniendo un Accuracy superior a comparación de la Regresión Logística
+## 4. **Expected Results:**
+The Support Vector Machine (SVM) model was selected as the winner due to its superior ability to handle nonlinear relationships in chemical data, achieving higher accuracy compared to the Logistic Regression model.
 
-**Desarrollado por:** Samantha Castro
+**Developed By:** Samantha Castro
